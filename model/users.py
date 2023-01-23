@@ -60,7 +60,6 @@ class Post(db.Model):
             "userID": self.userID,
             "note": self.note,
             "image": self.image,
-            "base64": str(file_encode)
         }
 
 
@@ -202,11 +201,11 @@ def initUsers():
     """Create database and tables"""
     db.create_all()
     """Tester data for table"""
-    u1 = User(name='Prasith Chilla', uid='prasith', password='prasith', dob=date(1847, 2, 11))
-    u2 = User(name='Emaad Mir', uid='emaad', password='emaad')
-    u3 = User(name='Vyaan Guatam', uid='vyaan', password='vyaan')
-    u4 = User(name='Chinmay', uid='chin', password='chin')
-    u5 = User(name='Chris', uid='chris', password='chris',dob=date(1959, 10, 21))
+    u1 = User(name='Prasith Chilla', uid='prasith', dob=date(2009,1,9))
+    u2 = User(name='Emaad Mir', uid='emaad',dob=date(2007,3,23))
+    u3 = User(name='Vyaan Guatam', uid='vyaan',dob=date(2007,4,23))
+    u4 = User(name='Chinmay', uid='chin',dob=date(2007,3,12))
+    u5 = User(name='Chris', uid='chris',dob=date(2000,2,23))
 
     users = [u1, u2, u3, u4, u5]
 
