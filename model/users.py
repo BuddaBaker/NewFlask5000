@@ -202,11 +202,11 @@ def initUsers():
     """Create database and tables"""
     db.create_all()
     """Tester data for table"""
-    u1 = User(name='Thomas Edison', uid='toby', password='123toby', dob=date(1847, 2, 11))
-    u2 = User(name='Nicholas Tesla', uid='niko', password='123niko')
-    u3 = User(name='Alexander Graham Bell', uid='lex', password='123lex')
-    u4 = User(name='Eli Whitney', uid='whit', password='123whit')
-    u5 = User(name='John Mortensen', uid='jm1021', dob=date(1959, 10, 21))
+    u1 = User(name='Prasith Chilla', uid='prasith', password='prasith', dob=date(1847, 2, 11))
+    u2 = User(name='Emaad Mir', uid='emaad', password='emaad')
+    u3 = User(name='Vyaan Guatam', uid='vyaan', password='vyaan')
+    u4 = User(name='Chinmay', uid='chin', password='chin')
+    u5 = User(name='Chris', uid='chris', password='chris',dob=date(1959, 10, 21))
 
     users = [u1, u2, u3, u4, u5]
 
